@@ -5,12 +5,12 @@ import os
 # Defina as credenciais e a URL do servidor MinIO
 minio_client = Minio(
     "localhost:9000",  
-    access_key="minioaccesskey",  # Substituir pela sua chave de acesso
-    secret_key="miniosecretkey",  # Substituir pela sua chave secreta
-    secure=False  # Defomor como True se estiver usando HTTPS
+    access_key="minioadmin",  # Chave padrão
+    secret_key="minioadmin",  # Chave padrão
+    secure=False  # Defiir como True se estiver usando HTTPS
 )
 
-# Nome do bucket onde os arquivos serão armazenados
+# Nome padrão do bucket onde os arquivos serão armazenados
 bucket_name = "meu-bucket"
 
 # criar um bucket (caso não exista)
@@ -44,10 +44,11 @@ def download_file(file_name, download_path):
 create_bucket(bucket_name)
 
 # Exemplo de upload de um arquivo
-file_path = "exemplo.txt"  # Caminho do arquivo que você quer fazer o upload
-file_name = "exemplo.txt"  # Nome que o arquivo terá no MinIO
-upload_file(file_path, file_name)
+file_path = "exemplo.txt"  # Caminho padrão do arquivo do arquivo do upload
+upload_name = "exemplo.txt"  # Nome padrão que o arquivo terá no MinIO
+upload_file(file_path, upload_name)
 
 # Exemplo de download de um arquivo
-download_path = "baixado_exemplo.txt"  # Caminho onde o arquivo será salvo
-download_file(file_name, download_path)
+download_path = "baixado_exemplo.txt"  # Caminho padrão do arquivo de download
+download_name = "exemplo.txt"  # Nome padrão que o arquivo baixado terá
+download_file(file_name, download_name)
