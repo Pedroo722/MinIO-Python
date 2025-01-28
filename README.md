@@ -15,12 +15,12 @@ Aplicação simples em Python que salva e baixa arquivos a partir do MinIO.
 ## Como Executar
 ### Passos para execução
 
-1. Instale o MinIO.
+1. Instale a depedência MinIO para o Python.
    ```bash
     python -m pip install minio
    ```
 
-2. Execute o MinIO localmente.
+2. Instale o MinIO Server e então execute-o localmente.
    ```bash
     ./minio server /data --console-address ":9001"
    ```
