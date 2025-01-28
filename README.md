@@ -25,11 +25,6 @@ Aplicação simples em Python que salva e baixa arquivos a partir do MinIO.
     .\minio server .\data --console-address ":9001"
    ```
 
-3. Execute o arquivo python.
-   ```bash
-    python App.py
-   ```
-
 Com isso, o servidor MinIO estará na porta 9000 e o painel de administração na porta 9001.
 
 Apenas acesse o painel de administração no seu navegador: http://localhost:9001
@@ -40,7 +35,13 @@ Access Key: ```minioadmin```
 
 Secret Key: ```minioadmin```
 
-O script vai:
+
+3. Execute o arquivo python.
+   ```bash
+    python App.py
+   ```
+
+Com isso o script vai:
 - Criar um bucket chamado "meu-bucket" no MinIO (se ele ainda não existir).
 - Fazer o upload do arquivo exemplo.txt (verifique se o arquivo realmente existe no seu sistema antes de executar o upload).
 - Fazer o download do arquivo e salvar como baixado_exemplo.txt.
