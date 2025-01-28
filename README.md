@@ -22,7 +22,7 @@ Aplicação simples em Python que salva e baixa arquivos a partir do MinIO.
 
 2. Instale o MinIO Server e então execute-o localmente.
    ```bash
-    ./minio server /data --console-address ":9001"
+    .\minio server .\data --console-address ":9001"
    ```
 
 3. Execute o arquivo python.
@@ -36,8 +36,9 @@ Apenas acesse o painel de administração no seu navegador: http://localhost:900
 
 E então use as credenciais padrão:
 
-Access Key: minioaccesskey
-Secret Key: miniosecretkey
+Access Key: ```minioadmin```
+
+Secret Key: ```minioadmin```
 
 O script vai:
 - Criar um bucket chamado "meu-bucket" no MinIO (se ele ainda não existir).
