@@ -43,5 +43,5 @@ Secret Key: ```minioadmin```
 
 Com isso o script vai:
 - Criar um bucket chamado "meu-bucket" no MinIO (se ele ainda não existir).
-- Fazer o upload do arquivo exemplo.txt (verifique se o arquivo realmente existe no seu sistema antes de executar o upload).
-- Fazer o download do arquivo e salvar como baixado_exemplo.txt.
+- Por padrão, vai tentar fazer o upload do arquivo no caminho ```"exemplo.txt"``` com o nome ```"exemplo.txt"``` (altere o caminho e o nome para customizar o upload)
+- Por padrão, vai tentar Fazer o download do arquivo com o caminho ```"baixado_exemplo.txt"```, e então salvar o arquivo como ```baixado_exemplo.txt``` na raiz.
