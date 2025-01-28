@@ -7,7 +7,7 @@ minio_client = Minio(
     "localhost:9000",  
     access_key="minioadmin",  # Chave padrão
     secret_key="minioadmin",  # Chave padrão
-    secure=False  # Defiir como True se estiver usando HTTPS
+    secure=False  # Definir como True se estiver usando HTTPS
 )
 
 # Nome padrão do bucket onde os arquivos serão armazenados
@@ -50,5 +50,5 @@ upload_file(file_path, upload_name)
 
 # Exemplo de download de um arquivo
 download_path = "baixado_exemplo.txt"  # Caminho padrão do arquivo de download
-download_name = "exemplo.txt"  # Nome padrão que o arquivo baixado terá
+download_name = "baixado_exemplo.txt"  # Nome padrão que o arquivo baixado terá
 download_file(file_name, download_name)
